@@ -1,5 +1,7 @@
 # Terraform and apache beam code
 
+** Check the terraform and source folder **
+
 This code contains terraform and apache beam.
 The terraform code(main.tf) code is doing below things:
 * Create temporary bucket in GCP that is used by Apache Beam.
