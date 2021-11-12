@@ -1,0 +1,334 @@
+[
+    {
+      "name": "leg_id",
+      "type": "STRING",
+      "mode": "REQUIRED",
+      "description": "leg_id"
+    },
+    {
+      "name": "party_type",
+      "type": "STRING",
+      "mode": "REQUIRED",
+      "description": "party_type"
+    },
+    {
+      "name": "call_id",
+      "type": "INTEGER",
+      "mode": "REQUIRED",
+      "description": "call_id"
+    },
+    {
+      "name": "line_id",
+      "type": "INTEGER",
+      "mode": "REQUIRED",
+      "description": "line_id"
+    },
+    {
+      "name": "switch_id",
+      "type": "INTEGER",
+      "mode": "REQUIRED",
+      "description": "switch_id"
+    },
+    {
+      "name": "connect_reason",
+      "type": "STRING",
+      "mode": "REQUIRED",
+      "description": "connect_reason"
+    },
+    {
+      "name": "disconnect_reason",
+      "type": "STRING",
+      "mode": "REQUIRED",
+      "description": "disconnect_reason"
+    },
+    {
+      "name": "party_id_flags",
+      "type": "STRING",
+      "mode": "REQUIRED",
+      "description": "party_id_flags"
+    },
+    {
+      "name": "party_id",
+      "type": "STRING",
+      "mode": "NULLABLE",
+      "description": "party_id"
+    },
+    {
+      "name": "partyid_name",
+      "type": "STRING",
+      "mode": "NULLABLE",
+      "description": "partyid_name"
+    },
+    {
+      "name": "partyid_last_name",
+      "type": "STRING",
+      "mode": "NULLABLE",
+      "description": "partyid_last_name"
+    },
+    {
+      "name": "mailbox_id",
+      "type": "STRING",
+      "mode": "NULLABLE",
+      "description": "mailbox_id"
+    },
+    {
+      "name": "related_calltableid",
+      "type": "INTEGER",
+      "mode": "NULLABLE",
+      "description": "related_calltableid"
+    },
+    {
+      "name": "long_distance",
+      "type": "INTEGER",
+      "mode": "NULLABLE",
+      "description": "long_distance"
+    },
+    {
+      "name": "trunk_direction",
+      "type": "STRING",
+      "mode": "NULLABLE",
+      "description": "trunk_direction"
+    },
+    {
+      "name": "site_name",
+      "type": "STRING",
+      "mode": "NULLABLE",
+      "description": "site_name"
+    },
+    {
+      "name": "server_name",
+      "type": "STRING",
+      "mode": "NULLABLE",
+      "description": "server_name"
+    },
+    {
+      "name": "switch_name",
+      "type": "STRING",
+      "mode": "NULLABLE",
+      "description": "switch_name"
+    },
+    {
+      "name": "party_did",
+      "type": "STRING",
+      "mode": "NULLABLE",
+      "description": "party_did"
+    },
+    {
+      "name": "ipphone",
+      "type": "RECORD",
+      "mode": "REQUIRED",
+      "description": "details about the ipphone",
+      "fields": [
+        {
+          "name": "port_number",
+          "type": "INTEGER",
+          "mode": "REQUIRED",
+          "description": "names of the port_number"
+        },
+        {
+          "name": "port_id",
+          "type": "INTEGER",
+          "mode": "REQUIRED",
+          "description": "The type of port_id"
+        },
+        {
+          "name": "port_name",
+          "type": "STRING",
+          "mode": "NULLABLE",
+          "description": "port name"
+        },
+        {
+          "name": "group_id",
+          "type": "INTEGER",
+          "mode": "REQUIRED",
+          "description": "group id"
+        },
+        {
+          "name": "group_name",
+          "type": "STRING",
+          "mode": "NULLABLE",
+          "description": "group name"
+        }
+      ]
+    },
+    {
+      "name": "callleg_time",
+      "type": "RECORD",
+      "mode": "REQUIRED",
+      "description": "details about the call leg times",
+      "fields": [
+        {
+          "name": "connect_time",
+          "type": "TIMESTAMP",
+          "mode": "NULLABLE",
+          "description": "connect time"
+        },
+        {
+          "name": "connect_timems",
+          "type": "INTEGER",
+          "mode": "NULLABLE",
+          "description": "connect timems"
+        },
+        {
+          "name": "connect_time_utc",
+          "type": "TIMESTAMP",
+          "mode": "NULLABLE",
+          "description": "connect time utc"
+        },
+        {
+          "name": "disconnect_time",
+          "type": "TIMESTAMP",
+          "mode": "NULLABLE",
+          "description": "disconnect time"
+        },
+        {
+          "name": "disconnect_timems",
+          "type": "INTEGER",
+          "mode": "NULLABLE",
+          "description": "disconnect timems"
+        },
+        {
+          "name": "disconnect_time_utc",
+          "type": "TIMESTAMP",
+          "mode": "NULLABLE",
+          "description": "disconnect time utc"
+        },
+        {
+          "name": "talk_time",
+          "type": "TIMESTAMP",
+          "mode": "NULLABLE",
+          "description": "talk time"
+        },
+        {
+          "name": "talk_time_seconds",
+          "type": "INTEGER",
+          "mode": "NULLABLE",
+          "description": "talk time seconds"
+        },
+        {
+          "name": "hold_time",
+          "type": "TIMESTAMP",
+          "mode": "NULLABLE",
+          "description": "hold time"
+        },
+        {
+          "name": "ring_time",
+          "type": "TIMESTAMP",
+          "mode": "NULLABLE",
+          "description": "ring time"
+        },
+        {
+          "name": "duration",
+          "type": "TIMESTAMP",
+          "mode": "NULLABLE",
+          "description": "duration"
+        }
+      ]
+    },
+    {
+      "name": "control",
+      "type": "RECORD",
+      "mode": "REQUIRED",
+      "description": "details about the control",
+      "fields": [
+        {
+          "name": "ctrl_partyid_flags",
+          "type": "INTEGER",
+          "mode": "REQUIRED",
+          "description": "names of the ctrl_partyid_flags"
+        },
+        {
+          "name": "ctrl_partyid",
+          "type": "STRING",
+          "mode": "NULLABLE",
+          "description": "The type of ctrl_partyid"
+        },
+        {
+          "name": "ctrl_partyid_name",
+          "type": "STRING",
+          "mode": "NULLABLE",
+          "description": "ctrl partyid name"
+        },
+        {
+          "name": "ctrl_partyid_lastname",
+          "type": "STRING",
+          "mode": "NULLABLE",
+          "description": "ctrl partyid lastname"
+        }
+      ]
+    },
+    {
+      "name": "conference_leg",
+      "type": "RECORD",
+      "mode": "REQUIRED",
+      "description": "details about the conference leg",
+      "fields": [
+        {
+          "name": "conf_usertype",
+          "type": "INTEGER",
+          "mode": "NULLABLE",
+          "description": "names of the conf_usertype"
+        },
+        {
+          "name": "conf_adjconnect_time",
+          "type": "TIMESTAMP",
+          "mode": "NULLABLE",
+          "description": "conf adjconnect time"
+        },
+        {
+          "name": "conf_adjconnect_timems",
+          "type": "INTEGER",
+          "mode": "NULLABLE",
+          "description": "conf adjconnect timems name"
+        },
+        {
+          "name": "conf_adjconnect_duration",
+          "type": "TIMESTAMP",
+          "mode": "NULLABLE",
+          "description": "conf adjconnect duration"
+        }
+      ]
+    },
+    {
+      "name": "security_flag",
+      "type": "INTEGER",
+      "mode": "NULLABLE",
+      "description": "security flag"
+    },
+    {
+      "name": "profile_id",
+      "type": "INTEGER",
+      "mode": "NULLABLE",
+      "description": "profile_id"
+    },
+    {
+      "name": "account_id",
+      "type": "STRING",
+      "mode": "NULLABLE",
+      "description": "account_id"
+    },
+    {
+      "name": "tenant_id",
+      "type": "INTEGER",
+      "mode": "REQUIRED",
+      "description": "tenant id"
+    },
+    {
+      "name": "cluster_id",
+      "type": "INTEGER",
+      "mode": "NULLABLE",
+      "description": "cluster id"
+    },
+    {
+      "name": "external_sipcallid",
+      "type": "STRING",
+      "mode": "NULLABLE",
+      "description": "external sipcallid guid"
+    },
+    {
+      "name": "event_type",
+      "type": "STRING",
+      "mode": "REQUIRED",
+      "description":"event type"
+    }
+  ]

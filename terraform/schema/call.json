@@ -1,0 +1,224 @@
+[
+    {
+      "name": "call_id",
+      "type": "INTEGER",
+      "mode": "REQUIRED",
+      "description":"call id"
+    },
+    {
+      "name": "sipcall_id",
+      "type": "STRING",
+      "mode": "REQUIRED",
+      "description":"sipcall id"
+    },
+    {
+      "name": "dialed_number",
+      "type": "STRING",
+      "mode": "NULLABLE",
+      "description":"dialed_number"
+    },
+    {
+      "name": "caller_id",
+      "type": "STRING",
+      "mode": "NULLABLE",
+      "description":"caller id"
+    },
+    {
+      "name": "call_type",
+      "type": "STRING",
+      "mode": "REQUIRED",
+      "description":"call type"
+    },
+    {
+      "name": "extension",
+      "type": "STRING",
+      "mode": "NULLABLE",
+      "description":"extension"
+    },
+    {
+      "name": "locked",
+      "type": "INTEGER",
+      "mode": "NULLABLE",
+      "description":"locked"
+    },
+    {
+      "name": "billing",
+      "type": "RECORD",
+      "mode": "REQUIRED",
+      "description":"details about the call billing",
+      "fields": [
+        {
+          "name": "call_note",
+          "type": "STRING",
+          "mode": "NULLABLE",
+          "description":"call note"
+        },
+        {
+          "name": "billing_code",
+          "type": "STRING",
+          "mode": "NULLABLE",
+          "description":"billing code"
+        },
+        {
+          "name": "friendly_billing_code",
+          "type": "STRING",
+          "mode": "NULLABLE",
+          "description":"user display friendly billing code"
+        },
+        {
+          "name": "workgroup_call",
+          "type": "INTEGER",
+          "mode": "NULLABLE",
+          "description":"workgroup call flag"
+        },
+        {
+          "name": "long_distance",
+          "type": "INTEGER",
+          "mode": "NULLABLE",
+          "description":"long distance call flag"
+        },
+        {
+          "name": "aoc",
+          "type": "STRING",
+          "mode": "NULLABLE",
+          "description":"advice of charge for call"
+        }
+      ]
+    },
+    {
+      "name": "time",
+      "type": "RECORD",
+      "mode": "REQUIRED",
+      "description":"details about the call times",
+      "fields": [
+        {
+          "name": "start_time",
+          "type": "TIMESTAMP",
+          "mode": "REQUIRED",
+          "description":"start time"
+        },
+        {
+          "name": "start_timems",
+          "type": "INTEGER",
+          "mode": "REQUIRED",
+          "description":"start timems"
+        },
+        {
+          "name": "start_time_utc",
+          "type": "TIMESTAMP",
+          "mode": "NULLABLE",
+          "description":"start time utc"
+        },
+        {
+          "name": "end_time",
+          "type": "TIMESTAMP",
+          "mode": "NULLABLE",
+          "description":"end time"
+        },
+        {
+          "name": "end_timems",
+          "type": "INTEGER",
+          "mode": "NULLABLE",
+          "description":"end timems"
+        },
+        {
+          "name": "end_time_utc",
+          "type": "TIMESTAMP",
+          "mode": "NULLABLE",
+          "description":"end time utc"
+        },
+        {
+          "name": "duration",
+          "type": "TIMESTAMP",
+          "mode": "NULLABLE",
+          "description":"duration"
+        }
+      ]
+    },
+    {
+      "name": "conference",
+      "type": "RECORD",
+      "mode": "NULLABLE",
+      "description":"details about the conference",
+      "fields": [
+        {
+          "name": "conf_name",
+          "type": "STRING",
+          "mode": "NULLABLE",
+          "description":"names of the conference"
+        },
+        {
+          "name": "conf_type",
+          "type": "INTEGER",
+          "mode": "NULLABLE",
+          "description":"The type of conference"
+        },
+        {
+          "name": "conf_participant_code",
+          "type": "STRING",
+          "mode": "NULLABLE",
+          "description":"conference participant code"
+        },
+        {
+          "name": "conf_leader_code",
+          "type": "STRING",
+          "mode": "NULLABLE",
+          "description":"conference leader code"
+        },
+        {
+          "name": "conf_adj_start_time",
+          "type": "TIMESTAMP",
+          "mode": "NULLABLE",
+          "description":"conference adjusted start time"
+        },
+        {
+          "name": "conf_adj_start_timems",
+          "type": "INTEGER",
+          "mode": "NULLABLE",
+          "description":"conference adjusted start timems"
+        },
+        {
+          "name": "conf_adj_duration",
+          "type": "TIMESTAMP",
+          "mode": "NULLABLE",
+          "description":"conference adjusted duration"
+        }
+      ]
+    },
+    {
+      "name": "security_flag",
+      "type": "INTEGER",
+      "mode": "NULLABLE",
+      "description":"security flag"
+    },
+    {
+      "name": "archived",
+      "type": "INTEGER",
+      "mode": "NULLABLE",
+      "description":"archived"
+    },
+    {
+      "name": "tenant_id",
+      "type": "INTEGER",
+      "mode": "REQUIRED",
+      "description":"tenant id"
+    },
+    {
+      "name": "cluster_id",
+      "type": "INTEGER",
+      "mode": "NULLABLE",
+      "description":"cluster id"
+    },
+    {
+      "name": "related_call_guid",
+      "type": "STRING",
+      "mode": "NULLABLE",
+      "description":"related call guid"
+    },
+    {
+      "name": "event_type",
+      "type": "STRING",
+      "mode": "REQUIRED",
+      "description":"event type"
+    }
+  ]

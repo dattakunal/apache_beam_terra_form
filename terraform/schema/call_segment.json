@@ -1,0 +1,164 @@
+[
+    {
+      "name": "call_id",
+      "type": "INTEGER",
+      "mode": "REQUIRED",
+      "description": "call_id"
+    },
+    {
+      "name": "sipcall_id",
+      "type": "STRING",
+      "mode": "REQUIRED",
+      "description": "sipcall_id"      
+    },
+    {
+      "name": "extension",
+      "type": "STRING",
+      "mode": "NULLABLE",
+      "description": "extension"
+    },
+    {
+      "name": "party_id",
+      "type": "STRING",
+      "mode": "REQUIRED",
+      "description": "party_id"
+    },
+    {
+      "name": "mailbox_id",
+      "type": "STRING",
+      "mode": "NULLABLE",
+      "description": "mailbox_id"
+    },
+    {
+      "name": "source_class",
+      "type": "STRING",
+      "mode": "NULLABLE",
+      "description": "source_class"
+    },
+    {
+      "name": "profile_id",
+      "type": "INTEGER",
+      "mode": "NULLABLE",
+      "description": "profile_id"
+    },
+    {
+      "name": "connect_reason",
+      "type": "STRING",
+      "mode": "REQUIRED",
+      "description": "connect_reason"
+    },
+    {
+      "name": "dialed_number",
+      "type": "STRING",
+      "mode": "REQUIRED",
+      "description": "dialed_number"
+    },
+    {
+      "name": "caller_id",
+      "type": "STRING",
+      "mode": "REQUIRED",
+      "description": "caller_id"
+    },
+    {
+      "name": "party_type",
+      "type": "STRING",
+      "mode": "REQUIRED",
+      "description": "party_type"
+    },
+    {
+      "name": "partyid_name",
+      "type": "STRING",
+      "mode": "NULLABLE",
+      "description": "partyid_name"
+    },
+    {
+      "name": "billing_code",
+      "type": "STRING",
+      "mode": "NULLABLE",
+      "description": "billing code"
+    },
+    {
+      "name": "partyid_last_name",
+      "type": "STRING",
+      "mode": "NULLABLE",
+      "description": "partyid_last_name"
+    },
+    {
+      "name": "talk_time_seconds",
+      "type": "INTEGER",
+      "mode": "NULLABLE",
+      "description": "talk time seconds"
+    },
+    {
+      "name": "talk_time",
+      "type": "TIMESTAMP",
+      "mode": "NULLABLE",
+      "description": "talk time"
+    },
+    {
+      "name": "hold_time",
+      "type": "TIMESTAMP",
+      "mode": "NULLABLE",
+      "description": "hold time"
+    },
+    {
+      "name": "ring_time",
+      "type": "TIMESTAMP",
+      "mode": "NULLABLE",
+      "description": "ring time"
+    },
+    {
+      "name": "duration",
+      "type": "TIMESTAMP",
+      "mode": "NULLABLE",
+      "description": "duration"
+    },
+    {
+      "name": "start_time_utc",
+      "type": "TIMESTAMP",
+      "mode": "NULLABLE",
+      "description": "start time utc"
+    },
+    {
+      "name": "end_time_utc",
+      "type": "TIMESTAMP",
+      "mode": "NULLABLE",
+      "description": "end time utc"
+    },
+    {
+      "name": "call_type",
+      "type": "STRING",
+      "mode": "REQUIRED",
+      "description": "call_type"
+    },
+    {
+      "name": "cluster_id",
+      "type": "INTEGER",
+      "mode": "REQUIRED",
+      "description": "cluster id"
+    },
+    {
+      "name": "party_did",
+      "type": "STRING",
+      "mode": "NULLABLE",
+      "description": "party_did"
+    },
+    {
+      "name": "ctrlparty_id",
+      "type": "STRING",
+      "mode": "NULLABLE",
+      "description": "The type of ctrl_partyid"
+    },
+    {
+      "name": "tenant_id",
+      "type": "INTEGER",
+      "mode": "REQUIRED",
+      "description": "tenant id"
+    },
+    {
+      "name": "event_type",
+      "type": "STRING",
+      "mode": "REQUIRED",
+      "description":"event type"
+    }
+  ]

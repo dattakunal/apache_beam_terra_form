@@ -1,0 +1,14 @@
+[
+    {
+        "topic":"connect.cdr.calllog.call",
+        "table":"call"
+    },
+    {
+        "topic":"connect.cdr.calllog.connect",
+        "table":"connect"
+    },
+    {
+        "topic":"connect.cdr.calllog.callsegment",
+        "table":"call_segment"
+    }
+]
